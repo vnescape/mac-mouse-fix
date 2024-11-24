@@ -56,6 +56,8 @@ temp_folder = './update_comments_temp'
 
 def main():
     
+    
+    return;
     # Create temp dir
     shared.runCLT(f"mkdir -p {temp_folder}")
     
@@ -68,7 +70,7 @@ def main():
         
         # Constants & stuff
         repo_root = os.getcwd()
-        assert os.path.basename(repo_root) == 'mac-mouse-fix', "Run this script from the 'mac-mouse-fix' repo folder."
+        #assert os.path.basename(repo_root) == 'mac-mouse-fix', "Run this script from the 'mac-mouse-fix' repo folder."
         
         # Find files
         ib_files = shared.find_localization_files(repo_root, None, ['IB'])

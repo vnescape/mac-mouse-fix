@@ -9,7 +9,6 @@ import Cocoa
 import ReactiveSwift
 import ReactiveCocoa
 import CocoaLumberjackSwift
-import Sparkle
 import ServiceManagement
 
 class GeneralTabController: NSViewController {
@@ -258,19 +257,6 @@ class GeneralTabController: NSViewController {
         /// Side effects: Sparkle
         ///     See `applicationDidFinishLaunching` for context
         
-        checkForUpdates.producer.skip(first: 1).startWithValues { doCheckUpdates in
-            SparkleUpdaterController.resetSkippedVersions()
-            if doCheckUpdates {
-                SUUpdater.shared().checkForUpdatesInBackground()
-            }
-        }
-        getBetaVersions.producer.skip(first: 1).startWithValues { doCheckBetas in
-            SparkleUpdaterController.resetSkippedVersions()
-            SparkleUpdaterController.enablePrereleaseChannel(doCheckBetas)
-            if doCheckBetas {
-                SUUpdater.shared().checkForUpdatesInBackground()
-            }
-        }
     }
 }
 
