@@ -29,7 +29,7 @@
 		4F319CBB26252A2D004E5F63 /* ButtonGroupRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F319CBA26252A2D004E5F63 /* ButtonGroupRowView.m */; };
 		4F37FAD825FDFDC5004C34C4 /* MFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F37FAD725FDFDC4004C34C4 /* MFScrollView.m */; };
 		4F39BC26263AC31600FDF692 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F39BC24263AC2E800FDF692 /* Sparkle.framework */; };
-		4F39BC27263AC31600FDF692 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F39BC24263AC2E800FDF692 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F39BC27263AC31600FDF692 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F39BC24263AC2E800FDF692 /* Sparkle.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4F39BC3B263AF2B000FDF692 /* SparkleUpdaterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F39BC3A263AF2B000FDF692 /* SparkleUpdaterController.m */; };
 		4F39BC4A263B179200FDF692 /* AppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F39BC49263B179200FDF692 /* AppState.m */; };
 		4F3A40AB266BBB6200436821 /* AccelerationBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A40AA266BBB6200436821 /* AccelerationBezier.swift */; };
@@ -8265,8 +8265,9 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = App/SupportFiles/App.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -8299,8 +8300,9 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = App/SupportFiles/App.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -8319,7 +8321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nuebling.mac-mouse-fix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) IS_MAIN_APP";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) IS_MAIN_APP FORCE_LICENSED";
 				SWIFT_OBJC_BRIDGING_HEADER = "App/SupportFiles/Mac Mouse Fix-Bridging-Header.h";
 			};
 			name = Release;
@@ -8578,8 +8580,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = Helper/SupportFiles/Helper.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -8615,8 +8618,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = Helper/SupportFiles/Helper.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
